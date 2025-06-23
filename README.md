@@ -22,12 +22,13 @@ Mở MySQL Workbench → Open SQL Script → Execute [bookshopdb.sql](https://gi
 
 ### 2. Nạp project vào IDEA
 
-Mở IDEA → Get from VCS (màn hình Welcome) hoặc File | New | Project from Version Control (màn hình bình thường) → Clone project theo URL: https://github.com/nmquys/Book_Store_Online.git
+Mở IDEA → Get from VCS (màn hình Welcome) hoặc File → New → Project from Version Control (màn hình bình thường) → Clone project theo URL: https://github.com/nmquys/Book_Store_Online.git
 
 ### 3. Cấu hình Tomcat
 
-- Edit Configurations -> Add new configurations -> Tomcat Local
+- Edit Configurations  →  Add new configurations  →  Tomcat Local  → Application Server: Tomcat 10.1.39
 - Fix: war exploded
+  
 -> Apply
 
 ### 4. Run (Shift+F10)
@@ -36,9 +37,11 @@ Mở IDEA → Get from VCS (màn hình Welcome) hoặc File | New | Project from
 Theo mặc định: 
 -	DB_PORT là 3306 nếu sử dụng MySQL
 -	SERVER_NAME là localhost
--	DB_NAME là bookshopdb, DB_USERNAME là root
+-	DB_NAME là bookshopdb
+-	DB_USERNAME là root
 -	DB_PASSWORD là 12345
--	IMAGE_PATH là nơi để folder var_webapp_images vd: D:\\Web_J2EE\\BookShopWeb\\init\\var-webapp-images
+-	IMAGE_PATH là nơi để folder var_webapp_images vd: D:\\Web_J2EE\\BookShopWeb\\init\\var-webapp-images.
+  
   (Có thể thay đổi nếu như khác)
 
 
@@ -63,8 +66,8 @@ Theo mặc định:
 
 # Cấu hình phần mềm
 
-- IntelliJ IDEA 2024.3.4.1
+- IntelliJ IDEA 2024.3.4.1 trở lên
 - MySQL Workbench 8.0
-- Tomcat 10.1 trở lên (Vì dưới 10.1  sẽ bị lỗi thư viện)
+- Tomcat 10.1 trở lên (Vì dưới 10.1 sẽ bị lỗi thư viện)
 - Oracle OpenJDK 23.0.2 (MS JDK 11 sẽ bị lỗi)
 
